@@ -9,20 +9,40 @@ import Layout from './Layout.jsx'
 import DashboardPage from './pages/DashboardPage.jsx';
 import LoginPage from './pages/LoginPage.jsx'
 import OrderForm from './components/order/OrderForm.jsx';
+
+const initialOrders = [
+  {
+    source: "Whatsapp",
+    name: "John Doe",
+    phone: "123456789",
+    email: "john@example.com",
+    quantity: 2,
+    notes: "Some notes"
+  },
+  {
+    source: "Whatsapp",
+    name: "John Doe",
+    phone: "123456789",
+    email: "john@example.com",
+    quantity: 2,
+    notes: "Some notes"
+  },
+];
+
 const router = createBrowserRouter([
   {
     element: <Layout/>,
     children: [
       {
         path: '/',
-        element: <DashboardPage/>
+        element: <DashboardPage orders={initialOrders}/>
       },
       {
         path: 'login',
         element: <LoginPage/>
       },
       {
-        path: 'order',
+        path: 'order-form',
         element: <OrderForm/>
       }
     ]
