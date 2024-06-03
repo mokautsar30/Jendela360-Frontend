@@ -38,7 +38,7 @@ const Navbar = () => {
           <form>
             <button
               type="submit"
-              className="whitespace-nowrap rounded-full bg-orange-500 px-5 py-3 font-medium text-black transition-all duration-200 focus:outline-none  hover:bg-orange-300"
+              className="whitespace-nowrap rounded-full bg-orange-500 px-5 py-3 font-medium text-white transition-all duration-200 focus:outline-none  hover:bg-orange-600"
             >
               Logout
             </button>
