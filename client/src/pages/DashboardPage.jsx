@@ -1,11 +1,10 @@
 import React from 'react'
-import Navbar from '../components/navbar/Navbar'
-import OrderCard from '../components/order/OrderCard'
+import DashboardTable from '../components/dashboard/DashboardTable'
 const DashboardPage = () => {
   return (
     <>
       <div>
-        <OrderCard/>
+        <DashboardTable/>
       </div>
     </>
   )
