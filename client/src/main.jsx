@@ -8,6 +8,7 @@ import {
 import Layout from './Layout.jsx'
 import DashboardPage from './pages/DashboardPage.jsx';
 import LoginPage from './pages/LoginPage.jsx'
+import OrderForm from './components/order/OrderForm.jsx';
 const router = createBrowserRouter([
   {
     element: <Layout/>,
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: 'login',
         element: <LoginPage/>
+      },
+      {
+        path: 'order',
+        element: <OrderForm/>
       }
     ]
   },
